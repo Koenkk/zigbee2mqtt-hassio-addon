@@ -1,0 +1,5 @@
+{
+  "name": "Zigbee2mqtt Hass.io Add-on",
+  "url": "https://github.com/Koenkk/zigbee2mqtt-hassio-addon",
+  "maintainer": "Koen Kanters <koenkk@addons.community>"
+}

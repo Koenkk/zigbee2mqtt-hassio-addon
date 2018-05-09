@@ -1,0 +1,15 @@
+{
+    "name": "Zigbee2mqtt",
+    "version": "0.1",
+    "slug": "zigbee2mqtt",
+    "description": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",
+    "url": "https://github.com/Koenkk/zigbee2mqtt-hassio-addon/zigbee2mqtt",
+    "startup": "system",
+    "arch": [
+        "aarch64",
+        "amd64",
+        "armhf"
+    ],
+    "boot": "auto",
+    "image": "koenkk/zigbee2mqtt-hassioaddon-{arch}"
+}
