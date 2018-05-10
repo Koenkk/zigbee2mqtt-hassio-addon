@@ -1,6 +1,6 @@
 {
     "name": "Zigbee2mqtt",
-    "version": "0.1",
+    "version": "latest",
     "slug": "zigbee2mqtt",
     "description": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",
     "url": "https://github.com/Koenkk/zigbee2mqtt-hassio-addon/zigbee2mqtt",
@@ -11,5 +11,13 @@
         "armhf"
     ],
     "boot": "auto",
-    "image": "koenkk/zigbee2mqtt-hassioaddon-{arch}"
+    "image": "koenkk/zigbee2mqtt-hassioaddon-{arch}",
+    "host_network": true,
+    "devices": ["/dev/ttyACM0:/dev/ttyACM0:rwm"],
+    "options": {
+        "mqtt_host": "mqtt://localhost"
+      },
+      "schema": {
+        "mqtt_host": "str"
+      }
 }
