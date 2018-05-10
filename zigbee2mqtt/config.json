@@ -11,5 +11,12 @@
         "armhf"
     ],
     "boot": "auto",
-    "image": "koenkk/zigbee2mqtt-hassioaddon-{arch}"
+    "image": "koenkk/zigbee2mqtt-hassioaddon-{arch}",
+    "devices": ["/dev/ttyACM0:/dev/ttyACM0:rwm"],
+    "options": {
+        "mqtt_host": "mqtt://localhost"
+      },
+      "schema": {
+        "mqtt_host": "str"
+      }
 }
