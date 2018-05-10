@@ -12,6 +12,7 @@
     ],
     "boot": "auto",
     "image": "koenkk/zigbee2mqtt-hassioaddon-{arch}",
+    "host_network": true,
     "devices": ["/dev/ttyACM0:/dev/ttyACM0:rwm"],
     "options": {
         "mqtt_host": "mqtt://localhost"
